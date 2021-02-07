@@ -1,0 +1,19 @@
+<h2>New Book</h2>
+
+        <% if @book.errors.any? %>
+          <div>
+            <ul style="color: red">
+            <% @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+<%= form_with model:@book, local:true do |f| %>
+<h5>Title</h5>
+<%= f.text_field :title %><BR><BR>
+<h5>Body</h5>
+<%= f.text_area :body %><BR>
+<%= f.submit "Create Book" %>
+<% end %>

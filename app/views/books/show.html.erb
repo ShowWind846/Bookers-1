@@ -1,0 +1,16 @@
+
+<div class="detail">
+
+    <div class="flash">
+    <% flash.each do |message_type, message| %>
+    <%= message %>
+    <% end %>
+    </div>
+
+<p><B>Title: </B><%= @book.title %></p><br>
+<p><B>Body: </B><%= @book.body %></p>
+</div>
+
+<div class="move">
+<%= link_to "Edit", edit_book_path(@book) %> / <%= link_to "Back","/books" %>
+</div>

@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: verdana, arial, helvetica, sans-serif;
+ }
+
+ /* TOP画面のCSS */
+
+.top {
+　padding-top: 30px;
+  margin-left: 30px;
+}
+
+h1 {
+ padding-bottom: 30px;
+}
+
+strong {
+   font-weight: bold;
+ }
+
+p {
+   font-size: 13px;
+   line-height: 30px;
+ }
+
+a {
+   cursor: pointer;
+   color: #000;
+ }
+
+/* INDEX メイン画面のCSS */
+
+.flash {
+ color: green;
+ padding-left: 40px;
+ padding-bottom: 30px;
+}
+
+body {
+ font-size: 13px;
+ line-height: 18px;
+}
+
+main {
+ padding-top: 30px;
+ padding-left: 30px;
+}
+
+header {
+ margin-top: 30px;
+ margin-left: 30px;
+}
+
+/* table部分 */
+table {
+ margin-left: 20px;
+}
+thead {
+ font-size: 12px;
+}
+th, td {
+ padding: 3px;
+}
+
+/* 投稿機能部分に関するCSS */
+h2 {
+ font-size: 18px;
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
+.field {
+ margin-bottom: 10px;
+}
+
+/* SHOW頁 */
+.detail {
+ padding-top: 30px;
+ padding-left: 70px;
+ padding-bottom: 30px;
+}
+
+.move {
+ padding-left: 30px;
+}
+
+#error_explanation {
+ color: red;
+}
+
+#error_explanation ul {
+ list-style: none;
+}
